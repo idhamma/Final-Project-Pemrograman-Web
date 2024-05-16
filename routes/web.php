@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
+//default or main page
 Route::get('/', function () {
     return view('homepage');
 });
@@ -15,9 +16,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/aboutus', function () {
-    return view('aboutUs');
-})->middleware(['auth', 'verified'])->name('aboutus');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -36,6 +35,12 @@ Route::post('events/validate',[App\Http\Controllers\EventsController::class,'val
 require __DIR__.'/auth.php';
 
 //route navigation bar
+
+//public accessS
 Route::get('/homepage', function () {
-    return view('layouts.homepage');
-})->middleware(['auth', 'verified'])->name('homepage');
+    return view('homepage');
+})->name('homepage');
+
+Route::get('/aboutus', function () {
+    return view('aboutUs');
+})->name('aboutus');

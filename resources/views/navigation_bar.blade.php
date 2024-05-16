@@ -8,15 +8,42 @@
 </head>
 <body>
         <!-- NAVBAR -->
-        <nav>
-        <ul>
-            <li href="#"><a href="homepage.blade.php">Homepage</a></li>
-            <li href="#"><a href="{{ url('/AboutUs') }}">About Us</a></li>
-            <li href="#"><a href="{{ url('/CarsPage') }}">Cars</a></li>
-            <li href="#"><a href="{{ url('/TransactionPage') }}">My Transaction</a></li>
-            <li href="#"><a href="{{ url('/myaccountpage/MyAccountPage_Login') }}">My Account</a></li>
-            <li><img src="image/logo.png" alt="logo"></li>
-        </ul>
-    </nav>
+        @if(Auth::check())
+            <nav>
+                <ul>
+                    <li><img src="image/logo.png" alt="logo"></li>
+                    <li href="#"><a href="{{ route('homepage') }}">Homepage</a></li>
+                    <li href="#"><a href="{{ route('aboutus') }}">About Us</a></li>
+                    <li href="#"><a href="{{ url('/CarsPage') }}">Cars</a></li>
+                    <li href="#"><a href="{{ url('/TransactionPage') }}">My Transaction</a></li>
+
+                    <x-dropdown-link :href="route('profile.edit')">
+                            {{ __('My Account') }}
+                    </x-dropdown-link>
+
+                    <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <x-dropdown-link :href="route('logout')"
+                                    onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log Out') }}
+                            </x-dropdown-link>
+                    </form>
+                </ul>
+            </nav>
+        @else
+            <nav>
+                <ul>
+                    <li><img src="image/logo.png" alt="logo"></li>
+                    <li href="#"><a href="{{ route('homepage') }}">Homepage</a></li>
+                    <li href="#"><a href="{{ route('aboutus') }}">About Us</a></li>
+                    <li href="#"><a href="{{ url('/CarsPage') }}">Cars</a></li>
+                    <li href="#"><a href="{{ route('login') }}">Login</a></li>
+                    <li href="#"><a href="{{ route('register') }}">Register</a></li>
+                </ul>
+            </nav>
+        @endif
+
 </body>
 </html>
