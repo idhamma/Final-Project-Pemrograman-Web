@@ -44,3 +44,7 @@ Route::get('/homepage', function () {
 Route::get('/aboutus', function () {
     return view('aboutUs');
 })->name('aboutus');
+
+Route::get('/motorcycles', function () {
+    return view('motorcycles');
+})->middleware(['auth'])->name('motorcycles');

@@ -14,7 +14,7 @@
     @include('navigation_bar')
     
     <!-- MAIN CONTENT -->
-    <main style="overflow: hidden;">
+    <main>
         <section>
             <div class="textkategori">
                 <h1>Check Out Our Categories!</h1>

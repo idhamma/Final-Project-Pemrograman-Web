@@ -6,7 +6,7 @@ main {
 
 .textkategori {
     display: flex;
-    margin-top: 3em;
+    /* margin-top: 3em; */
     justify-content: flex-start;
 }
 
@@ -17,9 +17,8 @@ main {
 
 .jeniscar {
     padding: 2em;
-    height: 30em;
     width: 70em;
-    margin-top: 3em;
+    /* margin-top: 3em; */
     margin-bottom: 3em;
     background-color: white;
     opacity: 95%;
@@ -27,13 +26,10 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 2em;
-    overflow: auto;
 }
-
 
 .jenis-card {
     width: 45%;
-    height: 30em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     margin-top: 6em;
     border-radius: 2em;
@@ -97,7 +93,7 @@ main {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    margin-top: 7em;
+    /* margin-top: 7em; */
     align-items: center;
     justify-content: center;
 }
