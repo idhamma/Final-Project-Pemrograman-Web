@@ -16,38 +16,34 @@ main {
 }
 
 .jeniscar {
-    justify-self: center;
-    height: 30em;
-    width: 70em;
-    margin-top: 3em;
+    padding: 2em;
+    width: 65em;
+    /* margin-top: 3em; */
     margin-bottom: 3em;
     background-color: white;
     opacity: 95%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 2em;
-
+    gap: 4em;
+    justify-content: space-between;
+    /* Removed flex-direction: column */
 }
 
 .jenis-card {
-    width: 45%;
-    height: 40em;
+   
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     margin-top: 2em;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
+    padding: 1em; /* Added padding for better spacing inside the cards */
 }
-
 
 .jenis-card h2 {
     margin-left: 1em;
 }
 
 .jenis-card img {
-    margin: 2em;
+    margin: 2em auto; /* Center the image horizontally */
     width: 17em;
 }
 
@@ -61,4 +57,13 @@ main {
     height: 0.1em;
     background-color: #AFB1B6;
     width: 100%;
+}
+
+.jeniscar .cuandprior {
+    display: flex;
+    flex-direction: r;
+    gap: 1em;
+    /* margin-top: 7em; */
+    align-items: center;
+    justify-content: center;
 }
