@@ -1,0 +1,103 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textkategori {
+    display: flex;
+    margin-top: 3em;
+    justify-content: flex-start;
+}
+
+.textkategori h1 {
+    font-size: 2em;
+    color: #0066DD;
+}
+
+.jeniscar {
+    padding: 2em;
+    height: 30em;
+    width: 70em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    background-color: white;
+    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    overflow: auto;
+}
+
+
+.jenis-card {
+    width: 45%;
+    height: 30em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 6em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.jenis-card-panjang {
+    width: 90.5%;
+    height: 20em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2em;
+    justify-content: center;
+    margin-left: 2.9em;
+}
+
+.jenis-card-panjang p {
+    font-size: 1.5em;
+    color: #AFB1B6;
+    margin: 1em;
+}
+
+.jenis-card-panjang h2 {
+    margin-left: 1em;
+}
+
+.jenis-card-panjang .garis {
+    height: 0.1em;
+    background-color: #AFB1B6;
+    width: 100%;
+}
+
+
+.jenis-card h2 {
+    margin-left: 1em;
+}
+
+.jenis-card img {
+    margin: 2em;
+}
+
+.jenis-card p {
+    font-size: 1.5em;
+    color: #AFB1B6;
+    margin: 1em;
+    padding: 0 0.2em 0.2em 0.2em;
+}
+
+
+
+.jenis-card .garis {
+    height: 0.1em;
+    background-color: #AFB1B6;
+    width: 100%;
+}
+
+.jeniscar .cuandprior {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 7em;
+    align-items: center;
+    justify-content: center;
+}

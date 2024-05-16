@@ -11,11 +11,11 @@
         <nav>
         <ul>
             <li href="#"><a href="homepage.blade.php">Homepage</a></li>
-            <li href="#"><a href="{{ url('/AboutUs') }}">AboutUs</a></li>
+            <li href="#"><a href="{{ url('/AboutUs') }}">About Us</a></li>
             <li href="#"><a href="{{ url('/CarsPage') }}">Cars</a></li>
             <li href="#"><a href="{{ url('/TransactionPage') }}">My Transaction</a></li>
             <li href="#"><a href="{{ url('/myaccountpage/MyAccountPage_Login') }}">My Account</a></li>
-            <li><img src="image/logo_draft.png" alt="logo_gambar"></li>
+            <li><img src="image/logo.png" alt="logo"></li>
         </ul>
     </nav>
 </body>

@@ -19,9 +19,9 @@
         <div class="input-form">
             <form action="">
                 <select name="location">
-                    <option value="indonesia">Indonesia</option>
-                    <option value="malaysia">Malaysia</option>
-                    <option value="singapura">Singapura</option>
+                    <option value="indonesia">Malang</option>
+                    <option value="malaysia">Surabaya</option>
+                    <option value="singapura">Bali</option>
                 </select>
                 <input type="date" name="rent-date">
                 <input type="date" name="return-date">
