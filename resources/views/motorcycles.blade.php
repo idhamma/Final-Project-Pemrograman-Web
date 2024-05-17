@@ -50,7 +50,7 @@
                 <div class="jenis-card">
                     <h2>SUV</h2>
                     <div class="garis"></div>
-                    <img src="image/sample/motor.pngg" alt="minicar">
+                    <img src="image/sample/motor.png" alt="minicar">
                     <p>SUVs (short for sport or suburban utility vehicles) are good-sized vehicles with a rugged look,
                         set higher off the road than normal cars.</p>
                 </div>

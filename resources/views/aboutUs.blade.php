@@ -13,6 +13,8 @@
     </x-slot>
 
     <section>
+            <br>
+            <br>
             <div class="textkategori">
                 <h1>Check Out Our Categories!</h1>
             </div>
