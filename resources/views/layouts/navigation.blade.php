@@ -26,6 +26,13 @@ img {
                         {{ __('Dashboard') }}
                     </x-nav-link>
                 </div>
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('transactions')" :active="request()->routeIs('transactions')">
+                        {{ __('My Transactions') }}
+                    </x-nav-link>
+                </div>
+                
                 @else
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('homepage')" :active="request()->routeIs('homepage')">
@@ -34,25 +41,19 @@ img {
                 </div>
                 @endauth
 
-                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('aboutus')" :active="request()->routeIs('aboutus')">
-                        {{ __('About Us') }}
-                    </x-nav-link>
-                </div>
-
+                
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('motorcycles')" :active="request()->routeIs('motorcycles')">
                         {{ __('Motorcycle') }}
                     </x-nav-link>
                 </div>
-
-                @auth
+                
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                    <x-nav-link :href="route('transactions')" :active="request()->routeIs('transactions')">
-                        {{ __('My Transactions') }}s
+                    <x-nav-link :href="route('aboutus')" :active="request()->routeIs('aboutus')">
+                        {{ __('About Us') }}
                     </x-nav-link>
                 </div>
-                @endauth
+                
 
             </div>
 
