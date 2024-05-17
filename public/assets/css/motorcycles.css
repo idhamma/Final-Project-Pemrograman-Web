@@ -17,17 +17,17 @@ main {
 
 .jeniscar {
     padding: 2em;
-    width: 65em;
+    width: 100em;
+    flex: wrap;
     /* margin-top: 3em; */
     margin-bottom: 3em;
-    background-color: white;
+    /* background-color: white; */
     opacity: 95%;
     display: flex;
     gap: 4em;
     justify-content: space-between;
     /* Removed flex-direction: column */
 }
-
 .jenis-card {
    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);

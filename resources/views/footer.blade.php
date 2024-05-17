@@ -17,7 +17,7 @@
                             <a href="#">Homepage</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a  href="#"><a href="{{ route('aboutus') }}">About Us</a>
                         </li>
                         <li>
                             <a href="#">FAQ's</a>

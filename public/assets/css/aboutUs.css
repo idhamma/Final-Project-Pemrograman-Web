@@ -20,7 +20,7 @@ main {
     width: 70em;
     /* margin-top: 3em; */
     margin-bottom: 3em;
-    background-color: white;
+    /* background-color: white; */
     opacity: 95%;
     display: flex;
     flex-direction: column;

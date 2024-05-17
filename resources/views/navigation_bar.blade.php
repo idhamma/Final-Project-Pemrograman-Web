@@ -38,7 +38,7 @@
                     <li><img src="image/logo.png" alt="logo"></li>
                     <li href="#"><a href="{{ route('homepage') }}">Homepage</a></li>
                     <li href="#"><a href="{{ route('aboutus') }}">About Us</a></li>
-                    <li href="#"><a href="{{ route('motorcycles') }}">Cars</a></li>
+                    <li href="#"><a href="{{ route('motorcycles') }}">Carstest</a></li>
                     <li href="#"><a href="{{ route('login') }}">Login</a></li>
                     <li href="#"><a href="{{ route('register') }}">Register</a></li>
                 </ul>

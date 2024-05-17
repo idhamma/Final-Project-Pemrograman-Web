@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<x-app-layout>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Assets/css/aboutUs.css" type="text/css">
-    <title>aboutUs</title>
+    <link rel="stylesheet" href="assets/css/aboutUs.css" type="text/css">
+    <title>motor page </title>
 </head>
 
-<body>
-    <!-- NAVBAR -->
-    
-    @include('navigation_bar')
-    
-    <!-- MAIN CONTENT -->
-    <main>
-        <section>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('About Us') }}
+        </h2>
+    </x-slot>
+
+    <section>
             <div class="textkategori">
                 <h1>Check Out Our Categories!</h1>
             </div>
@@ -60,12 +57,6 @@
                     </div>
                 </div>
         </section>
-    </main>
 
-    
-    <!-- FOOTER -->
-    @include('footer')
-    
-</body>
-
-</html>
+        @include('footer')
+</x-app-layout>

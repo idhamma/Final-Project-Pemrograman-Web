@@ -47,4 +47,9 @@ Route::get('/aboutus', function () {
 
 Route::get('/motorcycles', function () {
     return view('motorcycles');
-})->middleware(['auth'])->name('motorcycles');
+})->name('motorcycles');
+
+
+Route::get('/transactions', function () {
+    return view('transactions');
+})->middleware(['auth', 'verified'])->name('transactions');

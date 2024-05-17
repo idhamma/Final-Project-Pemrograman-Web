@@ -1,20 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<x-app-layout>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/motorcycles.css" type="text/css">
-    <title>carspage </title>
+    <title>motor page </title>
 </head>
 
-<body>
-    <!-- NAVBAR -->
-    @include('navigation_bar')
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Motorcycle') }}
+        </h2>
+    </x-slot>
 
-    <!-- MAIN CONTENT -->
-    <main>
-        <section>
+    <section>
             <div class="textkategori">
                 <h1>Check Out Our Categories!</h1>
             </div>
@@ -32,7 +30,7 @@
                 <div class="jenis-card">
                     <h2>Sedan</h2>
                     <div class="garis"></div>
-                    <img src="../Assets/Sedan.png" alt="minicar">
+                    <img src="image/sample/motor.png" alt="minicar">
                     <p>If you choose a car model that’s classed as intermediate, you won’t necessarily get the exact
                         make and model you picked. But you will get a car that is also classed as sedan. This means it
                         will be more or less the same size, with the same kind of gearbox, the same number of doors and
@@ -42,7 +40,7 @@
                 <div class="jenis-card">
                     <h2>Hatch back</h2>
                     <div class="garis"></div>
-                    <img src="../Assets/hachback.png" alt="minicar">
+                    <img src="image/sample/motor.png" alt="minicar">
                     <p>Compact and versatile, hatchbacks are perfect for short trips. They offer comfortable seating for
                         up to three or four passengers and easy access to cargo space through their distinctive rear
                         door. Great for city driving and convenience.
@@ -52,18 +50,12 @@
                 <div class="jenis-card">
                     <h2>SUV</h2>
                     <div class="garis"></div>
-                    <img src="../Assets/SUV.png" alt="minicar">
+                    <img src="image/sample/motor.pngg" alt="minicar">
                     <p>SUVs (short for sport or suburban utility vehicles) are good-sized vehicles with a rugged look,
                         set higher off the road than normal cars.</p>
-
-                <!-- </div> -->
-            </div>
+                </div>
             </div>
         </section>
-    </main>
 
-    <!-- FOOTER -->
-    @include('footer')
-</body>
-
-</html>
+        @include('footer')
+</x-app-layout>

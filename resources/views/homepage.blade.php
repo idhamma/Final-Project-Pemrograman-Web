@@ -1,18 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<x-app-layout>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/homepage.css" type="text/css">
-    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="assets/css/aboutUs.css" type="text/css">
+    <title>motor page </title>
 </head>
 
-<body>
-    @include('navigation_bar')
-
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Welcome') }}
+        </h2>
+    </x-slot>
+    
     <!-- MAIN CONTENT -->
-    <div class="main-content">
+<body>
+    <div class="py-36">
+        <div class="max-w-7xl mx-auto sm:px-24 lg:px-32">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="main-content">
         <div class="gradient-text">
             Start your own riding now!
         </div>
@@ -30,6 +35,12 @@
         </div>
     </div>
 
+            </div>
+        </div>
+    </div>
+
+
+    
     <!-- FOOTER -->
     <!-- ... -->
     <script>
@@ -41,4 +52,5 @@
     </script>
 </body>
 
-</html>
+@include('footer')
+</x-app-layout>
