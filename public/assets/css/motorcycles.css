@@ -1,3 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -5,65 +12,73 @@ main {
 }
 
 .textkategori {
+    align-self: center;
+    font-size: 2em;
     display: flex;
-    margin-top: 3em;
-    justify-content: flex-start;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    justify-content: center;
 }
 
 .textkategori h1 {
+    text-align: center;
     font-size: 2em;
     color: #0066DD;
 }
 
 .jeniscar {
     padding: 2em;
-    width: 100em;
-    flex: wrap;
-    /* margin-top: 3em; */
-    margin-bottom: 3em;
-    /* background-color: white; */
-    opacity: 95%;
     display: flex;
-    gap: 4em;
-    justify-content: space-between;
-    /* Removed flex-direction: column */
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    margin-bottom: 3em;
+    opacity: 95%;
 }
+
 .jenis-card {
-   
+    background-color: #191970;
+    color: #F9F6EE;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    margin-top: 2em;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
-    padding: 1em; /* Added padding for better spacing inside the cards */
+    padding: 1em;
+    text-align: center;
+    width: 30%; /* Adjust width to fit three per row */
+    min-width: 250px; /* Ensuring a minimum width for smaller screens */
 }
 
 .jenis-card h2 {
-    margin-left: 1em;
+    font-size: 1.5em;
 }
 
 .jenis-card img {
-    margin: 2em auto; /* Center the image horizontally */
+    margin: 2em auto;
     width: 17em;
+    height: auto;
 }
 
 .jenis-card p {
     font-size: 1.3em;
-    color: #AFB1B6;
     margin: 1em;
 }
 
 .jenis-card .garis {
     height: 0.1em;
-    background-color: #AFB1B6;
+    background-color: #00FFFF;
     width: 100%;
+    margin: 1em 0;
 }
 
-.jeniscar .cuandprior {
-    display: flex;
-    flex-direction: r;
-    gap: 1em;
-    /* margin-top: 7em; */
-    align-items: center;
-    justify-content: center;
+@media (max-width: 768px) {
+    .jenis-card {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .jenis-card {
+        width: 100%;
+    }
 }

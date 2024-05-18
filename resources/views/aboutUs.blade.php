@@ -29,9 +29,8 @@
                             mudah dan cepat. Gaspol tidak hanya menyediakan motor untuk disewa, tapi juga pengalaman yang tak 
                             terlupakan.
                         </p>
-
-
                     </div>
+
                     <div class="jenis-card">
                         <h2>Prioritas Kami</h2>
                         <div class="garis"></div>
@@ -46,9 +45,9 @@
                             (A)man berkendara<br>
                             (S)olusi fleksibel<br>
                             </p>
-
                         </div>
                     </div>
+
                     <div class="jenis-card-panjang">
                         <h2>Hubungi Kami</h2>
                         <div class="garis"></div>
@@ -56,7 +55,6 @@
                             yang tertera. Kami tidak sabar untuk mendengar opini Anda demi meningkatkan pelayanan
                             kami dan menjadikan pengalaman sewa Anda berkesan.
                         </p>
-
                     </div>
                 </div>
 

@@ -13,49 +13,71 @@
     </x-slot>
 
     <section>
-            <div class="textkategori">
-                <h1>Check Out Our Categories!</h1>
+        <div class="textkategori">
+            <h1>Cek Motor-Motor yang Kita Sediakan!</h1>
+        </div>
+
+        <div class="jeniscar">
+            <div class="jenis-card">
+                <h2>Motor Bebek</h2>
+                <div class="garis"></div>
+                <img src="image/sample/motor.png" alt="bebek">
+                <p>Motor bebek, pilihan praktis untuk perjalanan sehari-hari dengan desain ramping dan konsumsi bahan 
+                    bakar yang irit. Mudah dikendarai dan lincah di jalan, motor bebek dari Gaspol siap memberikan 
+                    kenyamanan dan efisiensi setiap hari.
+                </p>
             </div>
-            <div class="jeniscar">
-            <!-- <div class="cuandprior"> -->
-                <div class="jenis-card">
-                    <h2>Motor ngab</h2>
-                    <div class="garis"></div>
-                    <img src="image/sample/motor.png" alt="minicar">
-                    <p>'Mini' cars are the smallest types of cars you can hire. Minis are suitable for three or four
-                        people for very short trips. For longer trips, they’re more suitable for one or two people.
-                        Minis are often (but not necessarily) hatchbacks.</p>
 
-                </div>
-                <div class="jenis-card">
-                    <h2>Sedan</h2>
-                    <div class="garis"></div>
-                    <img src="image/sample/motor.png" alt="minicar">
-                    <p>If you choose a car model that’s classed as intermediate, you won’t necessarily get the exact
-                        make and model you picked. But you will get a car that is also classed as sedan. This means it
-                        will be more or less the same size, with the same kind of gearbox, the same number of doors and
-                        seats, etc.</p>
-
-                </div>
-                <div class="jenis-card">
-                    <h2>Hatch back</h2>
-                    <div class="garis"></div>
-                    <img src="image/sample/motor.png" alt="minicar">
-                    <p>Compact and versatile, hatchbacks are perfect for short trips. They offer comfortable seating for
-                        up to three or four passengers and easy access to cargo space through their distinctive rear
-                        door. Great for city driving and convenience.
-                    </p>
-
-                </div>
-                <div class="jenis-card">
-                    <h2>SUV</h2>
-                    <div class="garis"></div>
-                    <img src="image/sample/motor.png" alt="minicar">
-                    <p>SUVs (short for sport or suburban utility vehicles) are good-sized vehicles with a rugged look,
-                        set higher off the road than normal cars.</p>
-                </div>
+            <div class="jenis-card">
+                <h2>Matic</h2>
+                <div class="garis"></div>
+                <img src="image/sample/motor.png" alt="automatic">
+                <p>Motor matic, kendaraan stylish dan ergonomis yang menawarkan kemudahan manuver dan efisiensi bahan 
+                    bakar. Praktis dan nyaman, motor matic dari Gaspol siap menemani Anda menembus kemacetan dengan gaya.
+                </p>
             </div>
-        </section>
+
+            <div class="jenis-card">
+                <h2>Off-road</h2>
+                <div class="garis"></div>
+                <img src="image/sample/motor.png" alt="offroad">
+                <p>Motor off-road, dirancang untuk menaklukkan medan terjal dengan performa tangguh dan suspensi handal.
+                    Ideal untuk petualangan ekstrem, motor off-road dari Gaspol siap membawa Anda menjelajahi alam bebas 
+                    dengan percaya diri.
+                </p>
+            </div>
+
+            <div class="jenis-card">
+                <h2>Sports</h2>
+                <div class="garis"></div>
+                <img src="image/sample/motor.png" alt="sports">
+                <p>Motor sport, simbol kecepatan dan gaya dengan desain aerodinamis dan performa tinggi. Dirancang untuk 
+                    pengalaman berkendara yang mendebarkan, motor sport dari Gaspol menawarkan tenaga maksimal dan handling 
+                    presisi. Pilih motor sport dan rasakan adrenalin di setiap perjalanan!
+                </p>
+            </div>
+
+            <div class="jenis-card">
+                <h2>Motor Gede</h2>
+                <div class="garis"></div>
+                <img src="image/sample/motor.png" alt="moge">
+                <p>Moge atau motor gede, kendaraan mewah yang menawarkan kekuatan dan kenyamanan luar biasa. Dengan mesin 
+                    berkapasitas besar dan desain yang gagah, moge dari Gaspol memberikan pengalaman berkendara premium. 
+                    Nikmati sensasi perjalanan yang penuh tenaga dan prestise!
+                </p>
+            </div>
+
+            <div class="jenis-card">
+                <h2>Electric</h2>
+                <div class="garis"></div>
+                <img src="image/sample/motor.png" alt="electric">
+                <p>Motor electric, solusi ramah lingkungan dengan teknologi canggih untuk berkendara hening dan bebas emisi.
+                    Hemat energi dan biaya operasional, motor electric dari Gaspol memberikan pengalaman berkendara modern 
+                    dan berkelanjutan.
+                </p>
+            </div>
+        </div>
+    </section>
 
         @include('footer')
 </x-app-layout>
