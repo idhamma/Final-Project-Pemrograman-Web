@@ -13,15 +13,16 @@ return new class extends Migration
     {
         Schema::create('motorcycle', function (Blueprint $table) {
             $table->id();
-            $table->string('no_plat')->unique();
-            $table->string('nama_motor');
+            $table->string('plat_number')->unique();
+            $table->string('name');
             $table->string('brand');
-            $table->string('kategori');
-            $table->integer('tahun');
-            $table->string('lokasi');
+            $table->string('category');
+            $table->integer('cc');
+            $table->integer('year');
+            $table->string('location');
 
-            $table->integer('tarif');
-            $table->boolean('status_peminjaman');
+            $table->integer('fee');
+            $table->boolean('status')->default(true);
         });
     }
 
