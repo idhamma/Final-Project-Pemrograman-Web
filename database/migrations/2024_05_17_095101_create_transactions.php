@@ -10,18 +10,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('table_transactions', function (Blueprint $table) {
-            $table->id()->unique();
-            $table->timestamps();
+        Schema::create('transactions', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('id_user');
+            $table->unsignedBigInteger('id_motorcycle');
             $table->dateTime('tanggal_pinjam');
             $table->dateTime('tanggal_kembali');
             $table->string('lokasi');
-            $table->integer('biaya');
-            $table->unsignedBigInteger('id_user');
-            $table->unsignedBigInteger('id_motor');
+            $table->decimal('biaya', 10, 2);;
+            
+            $table->timestamps();
+    
+            $table->foreign('id_user')->references('id')->on('user')->onDelete('cascade');
+            $table->foreign('id_motorcycle')->references('id')->on('motorcycle')->onDelete('cascade');
 
-            $table->foreign('id_user')->references('id')->on('table_user');
-            $table->foreign('id_motor')->references('id')->on('table_motorcycle');
         });
     }
 
