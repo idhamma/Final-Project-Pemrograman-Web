@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Filament\Resources\MotorcyleResource\Pages;
+namespace App\Filament\Resources\MotorcycleResource\Pages;
 
-use App\Filament\Resources\MotorcyleResource;
+use App\Filament\Resources\MotorcycleResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 
-class EditMotorcyle extends EditRecord
+class EditMotorcycle extends EditRecord
 {
-    protected static string $resource = MotorcyleResource::class;
+    protected static string $resource = MotorcycleResource::class;
 
     protected function getHeaderActions(): array
     {

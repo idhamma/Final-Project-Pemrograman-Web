@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\VehicleController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -32,6 +33,7 @@ Route::post('events/validate',[App\Http\Controllers\EventsController::class,'val
 Route::get('events/validate',[App\Http\Controllers\EventsController::class,'showValidateForm'])->middleware(['auth'])->name('validateform.event');
 Route::post('events/validate',[App\Http\Controllers\EventsController::class,'validateForm'])->middleware(['auth'])->name('validate.event');
 
+Route::resource('vehicles', App\Http\Controllers\VehicleController::class)->middleware(['auth']);
 require __DIR__.'/auth.php';
 
 //route navigation bar
