@@ -16,7 +16,7 @@
             <br>
             <br>
             <div class="textkategori">
-                <h1>Check Out Our Categories!</h1>
+                <h1>Find Out More About Us</h1>
             </div>
             <div class="jeniscar">
                 <div class="cuandprior">
@@ -58,6 +58,27 @@
 
                     </div>
                 </div>
+
+            <div class="devs">
+                <h1>Meet the Gaspol Devs</h1>
+                <div class="textDevs">
+                    <div class="dev1">
+                        <h2>Idham Muhamad Akbar</h2>
+                    </div>
+                </div>
+
+                <div class="textDevs">
+                    <div class="dev2">
+                        <h2>Muhammad Nadhil Luthfirahman</h2>
+                    </div>
+                </div>
+
+                <div class="textDevs">
+                    <div class="dev3">
+                        <h2>Orvin Kent</h2>
+                    </div>
+                </div>
+            </div>
         </section>
 
         @include('footer')

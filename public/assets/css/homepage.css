@@ -39,7 +39,7 @@ body {
 }
 
 .gradient-text {
-    color: #0066DD;
+    color: F9F6EE;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -85,7 +85,7 @@ input {
 }
 
 .input-form button {
-    background-color: #0066DD;
+    background-color: #F9F6EE;
     border: none;
     color: white;
     border-radius: 0.5em;
@@ -121,7 +121,7 @@ footer p {
 }
 
 footer a:hover {
-    color: #0066DD;
+    color: #F9F6EE;
 }
 
 .footer-content {

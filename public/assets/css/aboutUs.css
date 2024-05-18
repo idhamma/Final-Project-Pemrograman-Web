@@ -5,12 +5,15 @@ main {
 }
 
 .textkategori {
+    align-self: center;
+    font-size: 2em;
     display: flex;
-    /* margin-top: 3em; */
-    justify-content: flex-start;
+    margin-top: 1em;
+    justify-content: center;
 }
 
 .textkategori h1 {
+    text-align: center;
     font-size: 2em;
     color: #0066DD;
 }
@@ -22,7 +25,7 @@ main {
     /* margin-top: 3em; */
     margin-bottom: 3em;
     /* background-color: white; */
-    opacity: 95%;
+    opacity: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,15 +35,15 @@ main {
 .jenis-card {
     width: 45%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    margin-top: 6em;
+    margin-top: 3em;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
 }
 
 .jenis-card-panjang {
-    width: 90.5%;
-    height: 20em;
+    width: 90%;
+    height: 15em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     border-radius: 2em;
     display: flex;
@@ -51,6 +54,7 @@ main {
 }
 
 .jenis-card-panjang p {
+    text-align: center;
     font-size: 1.5em;
     color: #F9F6EE;
     margin: 1em;
@@ -62,10 +66,9 @@ main {
 
 .jenis-card-panjang .garis {
     height: 0.1em;
-    background-color: #00BFFF;
+    background-color: #00FFFF;
     width: 100%;
 }
-
 
 .jenis-card h2 {
     margin-left: 1em;
@@ -82,19 +85,76 @@ main {
     padding: 0 0.2em 0.2em 0.2em;
 }
 
-
-
 .jenis-card .garis {
     height: 0.1em;
-    background-color: #00BFFF;
+    background-color: #00FFFF;
     width: 100%;
 }
 
 .jeniscar .cuandprior {
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 2em;
     /* margin-top: 7em; */
     align-items: center;
     justify-content: center;
+}
+
+.devs h1 {
+    text-align: center;
+    font-size: 4em;
+    color: #0066DD;
+    margin-bottom: 1em;
+}
+
+.textDevs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 3em;
+}
+
+.dev1 {
+    background-color: #00008B;
+    border: 1px solid #191970;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.dev1 h2 {
+    color: #FFD700;
+    font-size: 1.5em;
+}
+
+.dev2 {
+    background-color: #00008B;
+    border: 1px solid #191970;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.dev2 h2 {
+    color: #FFD700;
+    font-size: 1.5em;
+}
+
+.dev3 {
+    background-color: #00008B;
+    border: 1px solid #191970;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.dev3 h2 {
+    color: #FFD700;
+    font-size: 1.5em;
 }

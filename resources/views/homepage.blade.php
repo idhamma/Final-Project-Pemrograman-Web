@@ -14,6 +14,8 @@
     
     <!-- MAIN CONTENT -->
 <body>
+    <br>
+    <br>
     <div class="py-36">
         <div class="max-w-7xl mx-auto sm:px-24 lg:px-32">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
