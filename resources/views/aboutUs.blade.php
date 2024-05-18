@@ -16,65 +16,65 @@
             <br>
             <br>
             <div class="textkategori">
-                <h1>Find Out More About Us</h1>
+                <h1>Kenali Kami Lebih Dalam Lagi!</h1>
             </div>
             <div class="jeniscar">
                 <div class="cuandprior">
                     <div class="jenis-card">
-                        <h2> Why Choose Us?</h2>
+                        <h2>Kenapa Memilih Kita?</h2>
                         <div class="garis"></div>
-                        <p>Ventur is your trusted choice for affordable car rentals. We connect travelers with car
-                            owners, making exploration easy on your wallet. We prioritize quality and reliability,
-                            ensuring you get a dependable ride every time.
-
-                            Our user-friendly platform lets you effortlessly list your car or find the perfect vehicle
-                            for your trip. With a dedicated support team by your side, Ventur is your go-to for
-                            budget-friendly, convenient car rentals. Join us today and experience travel the Ventur way.
+                        <p>Selamat datang di Gaspol, layanan rental motor terpercaya hadir untuk memenuhi kebutuhan Anda. Dari 
+                            perjalanan sehari-hari ke kantor atau kuliah sampai petualangan spektakuler, kami menyediakan 
+                            pilihan motor yang beragam dan terawat dengan harga yang kompetitif, plus pemesanan yang 
+                            mudah dan cepat. Gaspol tidak hanya menyediakan motor untuk disewa, tapi juga pengalaman yang tak 
+                            terlupakan.
                         </p>
 
 
                     </div>
                     <div class="jenis-card">
-                        <h2>Our Priority</h2>
+                        <h2>Prioritas Kami</h2>
                         <div class="garis"></div>
-                        <p>Economical & Easy Car Rental:
-                            Ventur makes car rentals easy and budget-friendly. We bring together car owners and
-                            travelers, creating a convenient marketplace for economical exploration. Owners can earn by
-                            sharing their vehicles, while renters find reliable and affordable transportation.
-
-                            User-Friendly Platform:
-                                Ventur streamlines the rental process with a user-friendly platform. List your car for rent
-                                or discover the ideal vehicle for your trip effortlessly. It's a win-win for car owners and
-                                travelers.
+                        <p>Di Gaspol, kami menggunakan sistem PRIORITAS sebagai prioritas kami:<br>
+                            (P)elayanan yang cepat dan tanggap<br>
+                            (R)amah lingkungan<br>
+                            (I)novasi berkelanjutan<br>
+                            (O)ptimalkan kenyamanan<br>
+                            (R)incian harga transparan<br>
+                            (I)ntegritas dan kepercayaan<br>
+                            (T)angguh dan terawat<br>
+                            (A)man berkendara<br>
+                            (S)olusi fleksibel<br>
                             </p>
 
                         </div>
                     </div>
                     <div class="jenis-card-panjang">
-                        <h2>Reach Us Out!</h2>
+                        <h2>Hubungi Kami</h2>
                         <div class="garis"></div>
-                        <p>For any inquiries, feedback, or assistance, please don't hesitate to reach out to our customer
-                            support team. We are here to serve you and make your car rental experience memorable.</p>
+                        <p>Untuk pertanyaan, saran, dan bantuan apa pun, silakan menghubungi tim Customer Service kami
+                            yang tertera. Kami tidak sabar untuk mendengar opini Anda demi meningkatkan pelayanan
+                            kami dan menjadikan pengalaman sewa Anda berkesan.
+                        </p>
 
                     </div>
                 </div>
 
             <div class="devs">
-                <h1>Meet the Gaspol Devs</h1>
+                <h1>Temui Devs dari Gaspol</h1>
                 <div class="textDevs">
-                    <div class="dev1">
+                    <!-- Developer 1 -->
+                    <div class="dev">
                         <h2>Idham Muhamad Akbar</h2>
                     </div>
-                </div>
 
-                <div class="textDevs">
-                    <div class="dev2">
+                    <!-- Developer 2 -->
+                    <div class="dev">
                         <h2>Muhammad Nadhil Luthfirahman</h2>
                     </div>
-                </div>
 
-                <div class="textDevs">
-                    <div class="dev3">
+                    <!-- Developer 3 -->
+                    <div class="dev">
                         <h2>Orvin Kent</h2>
                     </div>
                 </div>
