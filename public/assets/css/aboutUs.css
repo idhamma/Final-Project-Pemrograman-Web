@@ -100,6 +100,12 @@ main {
     justify-content: center;
 }
 
+.devs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .devs h1 {
     text-align: center;
     font-size: 4em;
@@ -110,12 +116,13 @@ main {
 .textDevs {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     margin-top: 20px;
     margin-bottom: 3em;
 }
 
-.dev1 {
-    background-color: #00008B;
+.dev {
+    background-color: #191970;
     border: 1px solid #191970;
     border-radius: 8px;
     padding: 20px;
@@ -124,37 +131,25 @@ main {
     text-align: center;
 }
 
-.dev1 h2 {
-    color: #FFD700;
+.dev h2 {
+    color: 	#FF1493;
     font-size: 1.5em;
 }
 
-.dev2 {
-    background-color: #00008B;
-    border: 1px solid #191970;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
+@media (max-width: 768px) {
+    .textDevs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dev {
+        width: 80%;
+        margin-bottom: 20px;
+    }
 }
 
-.dev2 h2 {
-    color: #FFD700;
-    font-size: 1.5em;
-}
-
-.dev3 {
-    background-color: #00008B;
-    border: 1px solid #191970;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 30%;
-    text-align: center;
-}
-
-.dev3 h2 {
-    color: #FFD700;
-    font-size: 1.5em;
+@media (max-width: 480px) {
+    .dev {
+        width: 100%;
+    }
 }
