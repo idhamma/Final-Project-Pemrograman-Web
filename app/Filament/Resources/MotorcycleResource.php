@@ -17,7 +17,9 @@ class MotorcycleResource extends Resource
 {
     protected static ?string $model = Motorcycle::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-rocket-launch';
+
+    protected static ?string $navigationGroup = 'Vehicles Management';
 
     public static function form(Form $form): Form
     {
