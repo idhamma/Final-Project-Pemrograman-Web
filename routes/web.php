@@ -53,3 +53,4 @@ Route::get('/motorcycles', function () {
 Route::get('/transactions', function () {
     return view('transactions');
 })->middleware(['auth', 'verified'])->name('transactions');
+
