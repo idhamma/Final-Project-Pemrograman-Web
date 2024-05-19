@@ -23,6 +23,8 @@ return new class extends Migration
 
             $table->integer('fee');
             $table->boolean('status')->default(true);
+
+            $table->timestamps();
         });
     }
 

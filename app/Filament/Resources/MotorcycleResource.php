@@ -13,6 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
+use Filament\Forms\Components\TextInput;
+use Filament\Support\RawJs;
+
 class MotorcycleResource extends Resource
 {
     protected static ?string $model = Motorcycle::class;
@@ -24,9 +27,47 @@ class MotorcycleResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                //
-            ]);
+        ->schema([
+            Forms\Components\TextInput::make('plat_number')
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('name')
+                ->required()
+                ->maxLength(255),
+
+            TextInput::make('brand')
+            ->datalist([
+                'BWM',
+                'Ford',
+                'Mercedes-Benz',
+                'Porsche',
+                'Toyota',
+                'Tesla',
+                'Volkswagen',
+            ]),     
+
+            Forms\Components\TextInput::make('category')
+                ->required()
+                ->maxLength(255),
+            Forms\Components\TextInput::make('cc')
+                ->required(),
+            Forms\Components\TextInput::make('year')
+                ->required(),
+            Forms\Components\TextInput::make('location')
+                ->required()
+                ->maxLength(255),
+
+
+                TextInput::make('fee')
+                ->mask(RawJs::make('$money($input)'))
+                ->stripCharacters(',')
+                ->numeric(),
+
+
+            Forms\Components\TextInput::make('status')
+                ->required(),
+
+        ]);
     }
 
     public static function table(Table $table): Table

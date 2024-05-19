@@ -52,6 +52,8 @@ class MotorcycleController extends Controller
      */
     public function show($id)
     {
+        $motorcycle = Motorcycle::find($id);
+
         return view('motorcycle.show', compact('motorcycle'));
     }
 
