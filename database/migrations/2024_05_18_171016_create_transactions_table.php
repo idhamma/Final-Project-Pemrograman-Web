@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('id_user');
             $table->unsignedBigInteger('id_motorcycle');
+            $table->string('status');
             $table->dateTime('rental_date');
             $table->dateTime('return_date');
             $table->string('location');
