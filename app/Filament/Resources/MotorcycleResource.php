@@ -15,6 +15,9 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Support\RawJs;
+use Filament\Forms\Components\ToggleButtons;
+use Filament\Forms\Components\Toggle;
+use Filament\Forms\Components\Select;
 
 class MotorcycleResource extends Resource
 {
@@ -53,19 +56,25 @@ class MotorcycleResource extends Resource
                 ->required(),
             Forms\Components\TextInput::make('year')
                 ->required(),
-            Forms\Components\TextInput::make('location')
-                ->required()
-                ->maxLength(255),
+
+            Select::make('location')
+            ->options([
+                'malang' => 'Malang',
+                'surabaya' => 'Surabaya',
+                'bali' => 'Bali',
+            ])
+            ->native(false),
 
 
-                TextInput::make('fee')
-                ->mask(RawJs::make('$money($input)'))
-                ->stripCharacters(',')
-                ->numeric(),
+            TextInput::make('fee')
+            ->mask(RawJs::make('$money($input)'))
+            ->stripCharacters(',')
+            ->numeric(),
 
 
-            Forms\Components\TextInput::make('status')
-                ->required(),
+            Toggle::make('status')
+            ->onColor('success')
+            ->offColor('danger')
 
         ]);
     }
