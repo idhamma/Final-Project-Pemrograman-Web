@@ -13,9 +13,23 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <!-- Custom Styles -->
+        <style>
+            .homepage,
+            .homepage * {
+                box-sizing: border-box;
+            }
+            .homepage {
+                background-image: linear-gradient( 76.3deg,  rgba(44,62,78,1) 12.6%, rgba(69,103,131,1) 82.8% );
+                height: 1080px;
+                position: relative;
+                overflow-y: auto;
+            }
+        </style>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+        <div class="min-h-screen homepage">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
