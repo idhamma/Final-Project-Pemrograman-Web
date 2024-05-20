@@ -13,16 +13,14 @@ main {
 
 .textkategori {
     align-self: center;
-    font-size: 2em;
     display: flex;
     margin-top: 2em;
-    margin-bottom: 1em;
     justify-content: center;
 }
 
 .textkategori h1 {
     text-align: center;
-    font-size: 2em;
+    font-size: 3em;
     color: #F8F8FF;
 }
 
@@ -37,20 +35,18 @@ main {
 }
 
 .jenis-card {
-    background-color: 		#C0C0C0;
-    color: #F9F6EE;
+    width: 33%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 3em;
     border-radius: 2em;
     display: flex;
     flex-direction: column;
-    padding: 1em;
-    text-align: center;
-    width: 30%; /* Adjust width to fit three per row */
-    min-width: 250px; /* Ensuring a minimum width for smaller screens */
 }
 
 .jenis-card h2 {
-    font-size: 1.5em;
+    color: #F9F6EE;
+    text-align: center;
+    font-size: 1.75em;
 }
 
 .jenis-card img {
@@ -60,8 +56,10 @@ main {
 }
 
 .jenis-card p {
+    color: #F9F6EE;
     font-size: 1.3em;
     margin: 1em;
+    text-align: center;
 }
 
 .jenis-card .garis {

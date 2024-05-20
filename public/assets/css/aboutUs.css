@@ -6,16 +6,15 @@ main {
 
 .textkategori {
     align-self: center;
-    font-size: 2em;
     display: flex;
-    margin-top: 1em;
+    margin-top: 2em;
     justify-content: center;
 }
 
 .textkategori h1 {
     text-align: center;
-    font-size: 2em;
-    color: #0066DD;
+    font-size: 3em;
+    color: #F8F8FF;
 }
 
 .jeniscar {
@@ -43,7 +42,6 @@ main {
 
 .jenis-card-panjang {
     width: 90%;
-    height: 15em;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     border-radius: 2em;
     display: flex;
@@ -61,6 +59,7 @@ main {
 }
 
 .jenis-card-panjang h2 {
+    text-align: center;
     margin-left: 1em;
 }
 
@@ -71,6 +70,7 @@ main {
 }
 
 .jenis-card h2 {
+    text-align: center;
     margin-left: 1em;
 }
 
@@ -109,7 +109,7 @@ main {
 .devs h1 {
     text-align: center;
     font-size: 4em;
-    color: #0066DD;
+    color: #F8F8FF;
     margin-bottom: 1em;
 }
 
