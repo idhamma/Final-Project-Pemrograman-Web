@@ -21,6 +21,7 @@ return new class extends Migration
             $table->integer('year');
             $table->string('location');
 
+            $table->string('image');
             $table->integer('fee');
             $table->boolean('status')->default(true);
 

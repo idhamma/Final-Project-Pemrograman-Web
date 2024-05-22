@@ -18,6 +18,7 @@ use Filament\Support\RawJs;
 use Filament\Forms\Components\ToggleButtons;
 use Filament\Forms\Components\Toggle;
 use Filament\Forms\Components\Select;
+use Filament\Forms\Components\FileUpload;
 
 class MotorcycleResource extends Resource
 {
@@ -40,19 +41,19 @@ class MotorcycleResource extends Resource
 
             TextInput::make('brand')
             ->datalist([
-                'BWM',
-                'Ford',
-                'Mercedes-Benz',
-                'Porsche',
-                'Toyota',
-                'Tesla',
-                'Volkswagen',
+                'Honda',
+                'Yamaha',
+                'Suzuki',
+                'Kawasaki',
+                'Vespa',
+                'KTM',
             ]),     
 
             Forms\Components\TextInput::make('category')
                 ->required()
                 ->maxLength(255),
             Forms\Components\TextInput::make('cc')
+                ->numeric()
                 ->required(),
             Forms\Components\TextInput::make('year')
                 ->required(),
@@ -69,12 +70,13 @@ class MotorcycleResource extends Resource
             TextInput::make('fee')
             ->mask(RawJs::make('$money($input)'))
             ->stripCharacters(',')
-            ->numeric(),
+            ->numeric()
+            ->required(),
 
+            FileUpload::make('image'),
 
             Toggle::make('status')
-            ->onColor('success')
-            ->offColor('danger')
+            ->onColor('success'),
 
         ]);
     }
@@ -104,6 +106,8 @@ class MotorcycleResource extends Resource
                 Tables\Columns\TextColumn::make('location')
                     ->searchable()
                     ->sortable(),
+                Tables\Columns\ImageColumn::make('image'),
+    
                 Tables\Columns\TextColumn::make('fee')
                     ->searchable()
                     ->sortable(),

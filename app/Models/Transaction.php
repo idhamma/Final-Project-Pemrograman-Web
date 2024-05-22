@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 use App\Models\Motorcycle; // Add this line
 
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
 class Transaction extends Model
 {
     use HasFactory;
@@ -30,14 +32,14 @@ class Transaction extends Model
 
     protected $appends = ['duration'];
 
-    public function user()
+    public function user():BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'id_user');
     }
 
-    public function motorcycle()
+    public function motorcycle():belongsTo
     {
-        return $this->belongsTo(Motorcycle::class);
+        return $this->belongsTo(Motorcycle::class, 'id_motorcycle');
     }
 
     public function getDurationAttribute()
@@ -48,7 +50,7 @@ class Transaction extends Model
     public function getPriceAttribute()
     {
         $motorcycle = Motorcycle::find($this->attributes['id_motorcycle']);
-        $fee = $this->attributes['duration'] * $motorcycle->fee;
+        $fee = $this->getDurationAttribute() * $motorcycle->fee;
         return $fee;
     }
 

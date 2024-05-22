@@ -19,6 +19,7 @@ class Motorcycle extends Model
         'cc',
         'year',
         'location',
+        'image',
         'fee',
         'status',
     ];
