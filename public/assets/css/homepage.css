@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     background: url('../Assets/bg-homepage.jpg');
     background-size: cover;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -16,7 +15,6 @@ body {
 /* Homepage Styles */
 .homepage {
     background-size: cover;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

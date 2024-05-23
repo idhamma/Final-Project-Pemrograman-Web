@@ -18,7 +18,7 @@
     <br>
     <div class="py-36">
         <div class="max-w-7xl mx-auto sm:px-24 lg:px-32">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+            <div class="bg-white dark:bg-gray-800 shadow-sm sm:rounded-lg">
             <div class="main-content">
         <div class="gradient-text">
             Start your own riding now!
@@ -53,6 +53,22 @@
         });
     </script>
 </body>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     @include('footer')
 </x-app-layout>
