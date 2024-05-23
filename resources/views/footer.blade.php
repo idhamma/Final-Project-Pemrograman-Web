@@ -47,7 +47,7 @@
                         <a href="#">Sampaikan Keluhan</a>
                     </li>
                     <li>
-                        <a href="#">Kebijakan Probadi</a>
+                        <a href="#">Kebijakan Pribadi</a>
                     </li>
                     <li>
                         <a href="#">Syarat dan Ketentuan</a>
@@ -78,7 +78,7 @@
             </div>
             <div class="column-4">
                 <div>
-                    <img src="image/logos/logo.png" alt="logo">
+                    <img src="image/logo.png" alt="logo">
                 </div>
                 <div class="sect-5">
                     <h3>Sewa Motor Gaspol</h3>
