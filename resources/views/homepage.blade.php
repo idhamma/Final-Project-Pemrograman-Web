@@ -54,5 +54,5 @@
     </script>
 </body>
 
-<!-- @include('footer') -->
+    @include('footer')
 </x-app-layout>

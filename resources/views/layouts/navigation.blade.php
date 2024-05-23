@@ -20,7 +20,7 @@ nav {
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <li><img src="image/logo.png" alt="logo"></li>
+                        <li><img src="image/logos/logo.png" alt="logo"></li>
                     </a>
                 </div>
 
