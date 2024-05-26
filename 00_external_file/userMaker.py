@@ -27,7 +27,7 @@ sql_statements = "INSERT INTO users (id, name, email, phone_number, address, ema
 
 values = []
 
-for i in range(1, 50):
+for i in range(2, 50):
     name = nama[i]
     email = f'{name}@gmail.com'
     phone_number = f'08135628{str(i).zfill(2)}'

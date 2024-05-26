@@ -83,6 +83,16 @@ nav {
                             {{ __('Profile') }}
                         </x-dropdown-link>
 
+                        @php
+                        $isAdmin = \App\Models\Admin::where('email', Auth::user()->email)->first();
+                        @endphp
+
+                        @if($isAdmin)
+                        <x-dropdown-link :href="route('admin')">
+                            {{ __('Admin Dashboard') }}
+                        </x-dropdown-link>
+                        @endif
+
                         <!-- Authentication -->
                         <form method="POST" action="{{ route('logout') }}">
                             @csrf

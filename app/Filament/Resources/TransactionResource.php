@@ -22,6 +22,8 @@ use Filament\Tables\Columns\ToggleColumn;
 use Illuminate\Support\Collection;
 use App\Models\Motorcycle;
 use Filament\Forms\Get;
+use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\DB;
  
 
 
@@ -48,6 +50,7 @@ class TransactionResource extends Resource
                 ->required(),
 
                 DatePicker::make('rental_date')
+                    ->label('Start Date')
                     ->required()
                     ->live()
                     ->native(false)
@@ -68,7 +71,43 @@ class TransactionResource extends Resource
                         }
                     }),
 
+                // Forms\Components\Datepicker::make('rental_date')
+                //     ->required()
+                //     ->afterStateUpdated(function ($state, callable $set, callable $get) {
+                //         $returnDate = $get('return_date');
+                //         if ($state && $returnDate) {
+                //             $duration = Carbon::parse($state)->diffInDays(Carbon::parse($returnDate));
+                //             $set('duration', $duration);
+
+                //             $id_motorcycle = $get('id_motorcycle');
+                //             if ($id_motorcycle) {
+                //                 $motorcycle = Motorcycle::find($id_motorcycle);
+                //                 if ($motorcycle) {
+                //                     $price = $duration * $motorcycle->fee;
+                //                     $set('price', $price);
+                //                 }
+                //             }
+                //         }
+                //     })
+                //     ->validate(function ($value, $get) {
+                //         $id_motorcycle = $get('id_motorcycle');
+                //         $return_date = $get('return_date');
+                
+                //         $exists = DB::table('transactions')
+                //             ->where('id_motorcycle', $id_motorcycle)
+                //             ->where(function ($query) use ($value, $return_date) {
+                //                 $query->whereBetween('rental_date', [$value, $return_date])
+                //                       ->orWhereBetween('return_date', [$value, $return_date]);
+                //             })
+                //             ->exists();
+                
+                //         if ($exists) {
+                //             return 'Motorcycle is already booked for these dates.';
+                //         }
+                //     }),
+
                 DatePicker::make('return_date')
+                    ->label('End Date')
                     ->required()
                     ->live()
                     ->native(false)
@@ -89,7 +128,43 @@ class TransactionResource extends Resource
                         }
                     }),
 
+                // Forms\Components\Datepicker::make('return_date')
+                //     ->required()
+                //     ->afterStateUpdated(function ($state, callable $set, callable $get) {
+                //         $rentalDate = $get('rental_date');
+                //         if ($state && $rentalDate) {
+                //             $duration = Carbon::parse($rentalDate)->diffInDays(Carbon::parse($state));
+                //             $set('duration', $duration);
+
+                //             $id_motorcycle = $get('id_motorcycle');
+                //             if ($id_motorcycle) {
+                //                 $motorcycle = Motorcycle::find($id_motorcycle);
+                //                 if ($motorcycle) {
+                //                     $price = $duration * $motorcycle->fee;
+                //                     $set('price', $price);
+                //                 }
+                //             }
+                //         }
+                //     })
+                //     ->validate(function ($value, $get) {
+                //         $id_motorcycle = $get('id_motorcycle');
+                //         $rental_date = $get('rental_date');
+                
+                //         $exists = DB::table('transactions')
+                //             ->where('id_motorcycle', $id_motorcycle)
+                //             ->where(function ($query) use ($rental_date, $value) {
+                //                 $query->whereBetween('rental_date', [$rental_date, $value])
+                //                       ->orWhereBetween('return_date', [$rental_date, $value]);
+                //             })
+                //             ->exists();
+                
+                //         if ($exists) {
+                //             return 'Motorcycle is already booked for these dates.';
+                //         }
+                //     }),
+
                 Forms\Components\Select::make('id_user')
+                    ->label('Name')
                     ->relationship(name:'user', titleAttribute:'name')
                     ->searchable()
                     ->live()
@@ -97,6 +172,7 @@ class TransactionResource extends Resource
                     ->required(),
                     
                     Forms\Components\Select::make('id_motorcycle')
+                    ->label('Plate Number')
                     ->options(fn(Get $get): Collection => Motorcycle::query()
                         ->where('location', $get('location'))
                         ->where(function ($query) {

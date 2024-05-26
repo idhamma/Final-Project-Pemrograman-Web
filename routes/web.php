@@ -1,8 +1,16 @@
 <?php
 
+use App\Providers\Filament;
+
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\VehicleController;
+use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Auth;
+use App\Models\Admin;
+use Filament\Panel;
+use App\Providers\Filament\AdminPanelProvider;
+
+use App\Http\Controllers\AdminController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -25,15 +33,6 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('events/{location}/{name}', [App\Http\Controllers\EventsController::class,'show']);
-Route::get('events', [App\Http\Controllers\EventsController::class, 'index']);
-Route::get('events/validate',[App\Http\Controllers\EventsController::class,'showValidateForm'])->name('validateform.event');
-Route::post('events/validate',[App\Http\Controllers\EventsController::class,'validateForm'])->name('validate.event');
-
-Route::get('events/validate',[App\Http\Controllers\EventsController::class,'showValidateForm'])->middleware(['auth'])->name('validateform.event');
-Route::post('events/validate',[App\Http\Controllers\EventsController::class,'validateForm'])->middleware(['auth'])->name('validate.event');
-
-Route::resource('vehicles', App\Http\Controllers\VehicleController::class)->middleware(['auth']);
 require __DIR__.'/auth.php';
 
 //route navigation bar
@@ -55,4 +54,33 @@ Route::get('/motorcycles', function () {
 Route::get('/transactions', function () {
     return view('transactions');
 })->middleware(['auth', 'verified'])->name('transactions');
+
+// Route::get('/admin', function () {
+//     $isAdmin = \App\Models\Admin::where('email', Auth::user()->email)->first();
+//     if($isAdmin){
+//         $panel = new Panel(); // Membuat objek Panel
+//         return app()->call('App\Providers\Filament\AdminPanelProvider@panel', ['panel' => $panel]);
+
+//     }else{
+//         return redirect('/');
+//     }
+// })->middleware(['auth', 'verified'])->name('admin');
+
+Route::get('/admin',function(){
+    $isAdmin = \App\Models\Admin::where('email', Auth::user()->email)->first();
+
+    if($isAdmin){
+        // admincontrollee
+        // , [AdminController::class, 'index']
+        return view('admin');
+    }else{
+        return redirect('/');
+    }
+})->middleware(['auth', 'verified'])->name('admin');
+
+
+
+// Route::get('/admin', [AdminController::class, 'index'])
+//     ->middleware(['auth', 'verified'])
+//     ->name('admin');
 
