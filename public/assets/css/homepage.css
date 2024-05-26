@@ -1,10 +1,7 @@
-/* style.css */
-
 body {
     font-family: Arial, sans-serif;
     background: url('../Assets/bg-homepage.jpg');
     background-size: cover;
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +15,6 @@ body {
 /* Homepage Styles */
 .homepage {
     background-size: cover;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -39,7 +35,7 @@ body {
 }
 
 .gradient-text {
-    color: F9F6EE;
+    color: #F9F6EE;
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-style: normal;

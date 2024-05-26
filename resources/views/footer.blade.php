@@ -10,50 +10,47 @@
 <footer>
         <div class="footer-content">
             <div class="column-1">
-                <h3>Venture Car Renting Service</h3>
+                <h3>Sewa Motor Gaspol</h3>
                 <div class="column-11">
                     <ul>
                         <li>
                             <a href="#">Homepage</a>
                         </li>
                         <li>
-                            <a  href="#"><a href="{{ route('aboutus') }}">About Us</a>
+                            <a href="{{ route('aboutus') }}">Tentang</a>
                         </li>
                         <li>
-                            <a href="#">FAQ's</a>
+                            <a href="#">Pertanyaan</a>
                         </li>
                     </ul>
                     <div class="line"></div>
                     <ul>
                         <li>
-                            <a href="#">Cars</a>
+                            <a href="{{ route('motorcycles') }}">Motor</a>
                         </li>
                         <li>
-                            <a href="#">My Transaction</a>
+                            <a href="#">Transaksi Saya</a>
                         </li>
                         <li>
-                            <a href="#">My Account</a>
+                            <a href="#">Akun Saya</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="column-2">
-                <h3>Help & Support</h3>
+                <h3>Layanan dan Bantuan</h3>
                 <ul>
                     <li>
-                        <a href="#">Contact Information</a>
+                        <a href="https://www.youtube.com/watch?v=fcZXfoB2f70">Hubungi Kami</a>
                     </li>
                     <li>
-                        <a href="#">Submit a complaint</a>
+                        <a href="#">Sampaikan Keluhan</a>
                     </li>
                     <li>
-                        <a href="#">Privacy Policy</a>
+                        <a href="#">Kebijakan Pribadi</a>
                     </li>
                     <li>
-                        <a href="#">Terms & Agreement</a>
-                    </li>
-                    <li>
-                        <a href="#">FAQ's List</a>
+                        <a href="#">Syarat dan Ketentuan</a>
                     </li>
                 </ul>
             </div>
@@ -61,37 +58,34 @@
                 <div class="sect-1">
                     <h3>Official Partnership With:</h3>
                     <div>
-                        <img src="../Assets/Allianz_Logo.png" alt="allianz">
-                        <img src="../Assets/BOS Logo.png" alt="boslogo">
+                        <img src="image/logos/speedylogo.png" alt="allianz">
                     </div>
                 </div>
                 <div class="sect-2">
-                    <h3>Check On Us Out!</h3>
+                    <h3>Temui Kami!</h3>
                     <ul>
                         <li>
-                            <img src="../Assets/u_instagram-alt.png" alt="instagram">
+                            <img src="image/logos/ig.jpg" alt="instagram">
                         </li>
                         <li>
-                            <img src="../Assets/u_facebook.png" alt="facebook">
+                            <img src="image/logos/fb.png" alt="facebook">
                         </li>
                         <li>
-                            <img src="../Assets/u_twitter.png" alt="twitter">
-                        </li>
-                        <li>
-                            <img src="../Assets/u_whatsapp-alt.png" alt="whatsapp">
+                            <img src="image/logos/twt.png" alt="twitter">
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="column-4">
                 <div>
-                    <img src="../Assets/venture.png" alt="logo">
+                    <img src="image/logo.png" alt="logo">
                 </div>
                 <div class="sect-5">
-                    <h3>Venture Car Renting Service</h3>
-                    <p>Equity Tower, Floor 19A, Sudirman Central Busines District Lot 9 JRT.5, Jl. Jenderal Sudirman
-                        No.Kav.52-53, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Pusat, Daerah Khusus Ibukota
-                        Jakarta 12190.</p>
+                    <h3>Sewa Motor Gaspol</h3>
+                    <p>Jalan Bendungan Tangga Nomor 3, Sumbersari,
+                        Kecamatan Lowokwaru, Kota Malang,
+                        Jawa Timur 65145
+                    </p>
                 </div>
             </div>
         </div>
