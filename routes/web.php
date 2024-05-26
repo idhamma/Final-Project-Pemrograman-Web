@@ -59,10 +59,6 @@ Route::get('/transactions', function () {
     return view('transactions');
 })->middleware(['auth', 'verified'])->name('transactions');
 
-Route::get('/admin', function () {
-    return view('transactions');
-})->middleware(['auth', 'verified'])
-
 
 Route::name('filament.')
     ->group(function () {
@@ -226,6 +222,4 @@ Route::name('filament.')
             }
         }
     });
-
-
 
