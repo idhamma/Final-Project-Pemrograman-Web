@@ -14,13 +14,13 @@
                 <div class="column-11">
                     <ul>
                         <li>
-                            <a href="#">Homepage</a>
+                            <a href="{{ route('homepage') }}">Homepage</a>
                         </li>
                         <li>
                             <a href="{{ route('aboutus') }}">Tentang</a>
                         </li>
                         <li>
-                            <a href="#">Pertanyaan</a>
+                            <a href="https://en.wikipedia.org/wiki/Question">Pertanyaan</a>
                         </li>
                     </ul>
                     <div class="line"></div>
@@ -29,10 +29,10 @@
                             <a href="{{ route('motorcycles') }}">Motor</a>
                         </li>
                         <li>
-                            <a href="#">Transaksi Saya</a>
+                            <a href="{{ route('transactions') }}">Transaksi Saya</a>
                         </li>
                         <li>
-                            <a href="#">Akun Saya</a>
+                            <a href="{{ route('dashboard') }}">Akun Saya</a>
                         </li>
                     </ul>
                 </div>
@@ -44,13 +44,13 @@
                         <a href="https://www.youtube.com/watch?v=fcZXfoB2f70">Hubungi Kami</a>
                     </li>
                     <li>
-                        <a href="#">Sampaikan Keluhan</a>
+                        <a href="https://forms.gle/DMQTJ8QZTQx38GjA7">Sampaikan Keluhan</a>
                     </li>
                     <li>
-                        <a href="#">Kebijakan Pribadi</a>
+                        <a href="https://www.copy-pasta.io/privacy-policy">Kebijakan Pribadi</a>
                     </li>
                     <li>
-                        <a href="#">Syarat dan Ketentuan</a>
+                        <a href="https://www.copy-pasta.io/terms-conditions">Syarat dan Ketentuan</a>
                     </li>
                 </ul>
             </div>
@@ -58,20 +58,20 @@
                 <div class="sect-1">
                     <h3>Official Partnership With:</h3>
                     <div>
-                        <img src="image/logos/speedylogo.png" alt="allianz">
+                        <img src="image/logos/speedylogo.png" alt="speedy">
                     </div>
                 </div>
                 <div class="sect-2">
                     <h3>Temui Kami!</h3>
                     <ul>
                         <li>
-                            <img src="image/logos/ig.jpg" alt="instagram">
+                            <a href="https://www.instagram.com/instagram?igsh=aWFwN2t3dTJha2Jq"><img src="image/logos/ig.jpg" alt="instagram"></a> <!--cara embed link dalam image-->
                         </li>
                         <li>
-                            <img src="image/logos/fb.png" alt="facebook">
+                            <a href="https://m.facebook.com/story.php?id=100080344640704&story_fbid=1661013410722981"><img src="image/logos/fb.png" alt="facebook"></a>
                         </li>
                         <li>
-                            <img src="image/logos/twt.png" alt="twitter">
+                            <a href="https://x.com/memes"><img src="image/logos/twt.png" alt="twitter"></a>
                         </li>
                     </ul>
                 </div>
