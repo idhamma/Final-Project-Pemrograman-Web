@@ -27,6 +27,7 @@ return array(
     'App\\Filament\\Resources\\UserResource\\Pages\\EditUser' => $baseDir . '/app/Filament/Resources/UserResource/Pages/EditUser.php',
     'App\\Filament\\Resources\\UserResource\\Pages\\ListUsers' => $baseDir . '/app/Filament/Resources/UserResource/Pages/ListUsers.php',
     'App\\Filament\\Resources\\UserResource\\Pages\\ViewUser' => $baseDir . '/app/Filament/Resources/UserResource/Pages/ViewUser.php',
+    'App\\Http\\Controllers\\AdminController' => $baseDir . '/app/Http/Controllers/AdminController.php',
     'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => $baseDir . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
     'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => $baseDir . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
     'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => $baseDir . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
