@@ -88,7 +88,7 @@ nav {
                         @endphp
 
                         @if($isAdmin)
-                        <x-dropdown-link :href="route('admin')">
+                        <x-dropdown-link :href="url('/admin')">
                             {{ __('Admin Dashboard') }}
                         </x-dropdown-link>
                         @endif

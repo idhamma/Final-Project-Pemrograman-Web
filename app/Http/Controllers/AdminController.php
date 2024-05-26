@@ -15,7 +15,7 @@ class AdminController extends Controller
     public function index(){
 
         // GET|HEAD admin ..................................... admin › AdminController@index
-        return view('admin');
+        // return view('admin');
         
     }
 

@@ -55,32 +55,4 @@ Route::get('/transactions', function () {
     return view('transactions');
 })->middleware(['auth', 'verified'])->name('transactions');
 
-// Route::get('/admin', function () {
-//     $isAdmin = \App\Models\Admin::where('email', Auth::user()->email)->first();
-//     if($isAdmin){
-//         $panel = new Panel(); // Membuat objek Panel
-//         return app()->call('App\Providers\Filament\AdminPanelProvider@panel', ['panel' => $panel]);
-
-//     }else{
-//         return redirect('/');
-//     }
-// })->middleware(['auth', 'verified'])->name('admin');
-
-Route::get('/admin',function(){
-    $isAdmin = \App\Models\Admin::where('email', Auth::user()->email)->first();
-
-    if($isAdmin){
-        // admincontrollee
-        // , [AdminController::class, 'index']
-        return view('admin');
-    }else{
-        return redirect('/');
-    }
-})->middleware(['auth', 'verified'])->name('admin');
-
-
-
-// Route::get('/admin', [AdminController::class, 'index'])
-//     ->middleware(['auth', 'verified'])
-//     ->name('admin');
 
