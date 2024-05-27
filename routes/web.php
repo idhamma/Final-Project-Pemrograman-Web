@@ -59,6 +59,7 @@ Route::get('/transactions', function () {
     return view('transactions');
 })->middleware(['auth', 'verified'])->name('transactions');
 
+Route::get('/getMotorcycles', [MotorcycleController::class, 'getByLocation']);
 
 Route::name('filament.')
     ->group(function () {
