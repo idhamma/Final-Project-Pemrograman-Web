@@ -59,25 +59,37 @@
         </div>
 
         <div class="devs">
-            <h1>Temui Devs dari Gaspol</h1>
+            <h1>Temui Devs dari Gaspol!</h1>
             <div class="textDevs">
                 <!-- Developer 1 -->
-                <div class="dev">
-                    <h2>Idham Muhamad Akbar</h2>
+                <div class="dev-card">
+                    <div class="card-border-top"></div>
+                    <div class="img"></div>
+                    <span>Idham Muhamad Akbar</span>
+                    <p class="job"> Job Title</p>
+                    <a href="https://www.instagram.com/idhamma_"><button>@idhamma_</button></a>
                 </div>
 
                 <!-- Developer 2 -->
-                <div class="dev">
-                    <h2>Muhammad Nadhil Luthfirahman</h2>
+                <div class="dev-card">
+                    <div class="card-border-top"></div>
+                    <div class="img"></div>
+                    <span>Muhammad Nadhil Luthfirahman</span>
+                    <p class="job"> Job Title</p>
+                    <a href="https://www.instagram.com/nadhiluthfi/"><button>@nadhiluthfi</button></a>
                 </div>
 
                 <!-- Developer 3 -->
-                <div class="dev">
-                    <h2>Orvin Kent</h2>
-                </div>
+                <div class="dev-card">
+                <div class="card-border-top"></div>
+                <div class="img"></div>
+                <span>Orvin Kent Nathanael</span>
+                <p class="job"> Job Title</p>
+                <a href="https://www.instagram.com/hi_im_orvin/"><button>@hi_im_orvin</button></a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     @include('footer')
 </x-app-layout>

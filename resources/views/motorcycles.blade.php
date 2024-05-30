@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/motorcycles.css" type="text/css">
-    <title>motor page </title>
+    <title>Motor</title>
 </head>
 
     <x-slot name="header">

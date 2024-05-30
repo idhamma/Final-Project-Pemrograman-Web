@@ -17,7 +17,7 @@
                             <a href="{{ route('homepage') }}">Homepage</a>
                         </li>
                         <li>
-                            <a href="{{ route('aboutus') }}">Tentang</a>
+                            <a href="{{ route('aboutus') }}">Tentang Kami</a>
                         </li>
                         <li>
                             <a href="https://en.wikipedia.org/wiki/Question">Pertanyaan</a>
