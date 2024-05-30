@@ -59,12 +59,9 @@ Route::get('/motorcycles', function () {
 Route::get('/transactions', function () {
     return view('transactions');
 })->middleware(['auth', 'verified'])->name('transactions');
-<<<<<<< HEAD
-=======
 
 Route::get('/getMotorcycles', [MotorcycleController::class, 'getByLocation']);
 
 Route::get('/getMotorcycle/{id}', [MotorcycleController::class, 'show']);
 
 Route::post('/rentMotorcycle', [MotorcycleController::class, 'rent']);
->>>>>>> c920b78519228f2594bc49c7380ae3b2b78aac31
