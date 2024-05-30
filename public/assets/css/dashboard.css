@@ -86,49 +86,70 @@
         width: 120px;
         cursor: pointer;
     }
-    .product-catalogue-1 {
-        height: 300px;
-        position: relative;
-        margin-bottom: 20px;
-    }
-    .catalogue-1-bar {
-        background: #ffffff;
-        border-radius: 15px;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    .Motorcycle-name,
-    .Motorcycle-fee {
-        color: #000000;
-        font-family: "Inter-Medium", sans-serif;
-        font-size: 24px;
-        font-weight: bold;
-        position: absolute;
-        left: 6px;
-    }
-    .Motorcycle-name {
-        top: 199px;
-    }
-    .Motorcycle-fee {
-        top: 257px;
-    }
-    .description {
-        color: #afb1b6;
-        font-family: "Inter-Regular", sans-serif;
-        font-size: 12px;
-        position: absolute;
-        left: 7px;
-        top: 228px;
-    }
-    .image {
-        border-radius: 15px 15px 0 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        object-fit: cover;
-    }
+    
+
+
+.product-catalogue-1 {
+    height: 350px;
+    position: relative;
+    width: 100%;
+  }
+  .catalogue-1-bar {
+    background: #ffffff;
+    border-radius: 15px;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  .Motorcycle-name,
+  .Motorcycle-fee,
+  .description {
+    position: absolute;
+    left: 6px;
+    font-family: "Inter-Medium", sans-serif;
+  }
+  .Motorcycle-name {
+    top: 199px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+  }
+  .Motorcycle-fee {
+    top: 257px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+  }
+  .description {
+    top: 228px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #afb1b6;
+  }
+  .rent-now-button {
+    background-color: #1F2937; /* Dark Blue */
+    color: #ffffff;
+    font-family: "Inter-Medium", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: calc(100% - 20px); /* Full width with padding */
+  }
+  .rent-now-button:hover {
+    background-color: #324156; /* Lighter Blue when Hover */
+  }
+  .image {
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 193.88px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+  }

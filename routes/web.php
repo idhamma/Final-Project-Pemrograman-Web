@@ -15,6 +15,7 @@ use Filament\Panel;
 use App\Providers\Filament\AdminPanelProvider;
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\MotorcycleController;
 
 // Route::get('/', function () {
 //     return view('welcome');
@@ -60,6 +61,10 @@ Route::get('/transactions', function () {
 })->middleware(['auth', 'verified'])->name('transactions');
 
 Route::get('/getMotorcycles', [MotorcycleController::class, 'getByLocation']);
+
+Route::get('/getMotorcycle/{id}', [MotorcycleController::class, 'show']);
+
+Route::post('/rentMotorcycle', [MotorcycleController::class, 'rent']);
 
 Route::name('filament.')
     ->group(function () {
