@@ -60,9 +60,9 @@ class MotorcycleResource extends Resource
 
             Select::make('location')
             ->options([
-                'malang' => 'Malang',
-                'surabaya' => 'Surabaya',
-                'bali' => 'Bali',
+                'Malang' => 'Malang',
+                'Surabaya' => 'Surabaya',
+                'Bali' => 'Bali',
             ])
             ->native(false),
 
