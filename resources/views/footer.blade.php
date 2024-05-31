@@ -44,7 +44,7 @@
                         <a href="https://www.youtube.com/watch?v=fcZXfoB2f70">Hubungi Kami</a>
                     </li>
                     <li>
-                        <a href="https://forms.gle/DMQTJ8QZTQx38GjA7">Sampaikan Keluhan</a>
+                        <a href="https://forms.gle/uhf6VuyCjeMcJAzE7">Sampaikan Keluhan</a>
                     </li>
                     <li>
                         <a href="https://www.copy-pasta.io/privacy-policy">Kebijakan Pribadi</a>

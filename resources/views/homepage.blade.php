@@ -22,8 +22,12 @@
         <h1>Start Your Own Riding Now!</h1>
         <br>
         <br>
-        <h2>Jelajahi Malang, Surabaya, dan Bali bersama Gaspol</h2>
+        <h2>Jelajahi Malang, Surabaya, dan Bali bersama rental motor terpercaya, Gaspol</h2>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
     <br>
     <br>
     <br>
@@ -33,6 +37,7 @@
     <div class="explore">
         <a href="{{ route('dashboard') }}">Jelajahi Sekarang</a>
     </div>
+    <br>
     <br>
     <br>
     <br>
@@ -61,7 +66,6 @@
                 </div>
             </div>
         </section>
-        <br>
 
         <!--Testimoni-->
         <section class="testimoni">
@@ -85,9 +89,6 @@
                 </div>
             </div>
         </section>
-        <br>
-        <br>
-        <br>
     </div>
 </section>
 
