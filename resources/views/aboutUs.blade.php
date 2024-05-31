@@ -66,7 +66,7 @@
                     <div class="card-border-top"></div>
                     <div class="img"></div>
                     <span>Idham Muhamad Akbar</span>
-                    <p class="job"> Job Title</p>
+                    <p class="job">Team Manager</p>
                     <a href="https://www.instagram.com/idhamma_"><button>@idhamma_</button></a>
                 </div>
 
@@ -75,7 +75,7 @@
                     <div class="card-border-top"></div>
                     <div class="img"></div>
                     <span>Muhammad Nadhil Luthfirahman</span>
-                    <p class="job"> Job Title</p>
+                    <p class="job">Team Player</p>
                     <a href="https://www.instagram.com/nadhiluthfi/"><button>@nadhiluthfi</button></a>
                 </div>
 
@@ -84,7 +84,7 @@
                 <div class="card-border-top"></div>
                 <div class="img"></div>
                 <span>Orvin Kent Nathanael</span>
-                <p class="job"> Job Title</p>
+                <p class="job">Team Player</p>
                 <a href="https://www.instagram.com/hi_im_orvin/"><button>@hi_im_orvin</button></a>
             </div>
         </div>
